@@ -63,11 +63,28 @@
 ## 0533 Cobro del documento
 ### `Ventas > Terminal Punto de Venta`
 * Genero un ticket en la pantalla táctil.
-* Para cobrar el ticket, pulso en el botón correspondiente **`[Muestra la pantalla para cobrar ticket o imprime el documento]`**.
-* Aparece la pantalla **`Cobro de tickets`**.
-  * Propone el operario **`Operario`**, la fecha actual **`Fecha`** y el importe que hay que cobrar (con IVA incluido) **`Importe`**.
-  * Se introduce el importe que entrega el cliente **`Entrega`** y se muestra el cambio correspondiente **`Cambio`**.
-  * Se puede introducir un concepto **`Concepto`**.
-  * Selecciono la forma de cobro **`Forma de cobro`**.
+  * Para cobrar el ticket, pulso en el botón correspondiente **`[Muestra la pantalla para cobrar ticket o imprime el documento]`**.
+  * Aparece la pantalla **`Cobro de tickets`**.
+    * Propone el operario **`Operario`**, la fecha actual **`Fecha`** y el importe que hay que cobrar (con IVA incluido) **`Importe`**.
+    * Se introduce el importe que entrega el cliente **`Entrega`** y se muestra el cambio correspondiente **`Cambio`**.
+    * Se puede introducir un concepto **`Concepto`**.
+    * Selecciono la forma de cobro **`Forma de cobro`**.
+* Cambio a perfil lineal **`[Cambio de perfil]`**.
 * Genero un ticket en la pantalla lineal.
+  * Para cobrar el ticket, pulso en el botón correspondiente **`[Muestra la pantalla para cobrar ticket o imprime el documento]`**.
+  * Aparece la pantalla **`Cobro de tickets`**.
+  * Procedo como con la pantalla táctil.
 
+## 0541 Descuentos lineales y descuento total
+### `Ventas > Terminal Punto de Venta`
+* Genero un ticket en la pantalla lineal.
+* Hay dos tipos de descuento: *descuento lineal* y *descuento total*.
+  * Los descuentos lineales son sólo para tickets. Un descuento lineal es un descuento aplicado a la línea seleccionada.
+  * Accedo a los descuentos lineales **`[Opciones > Descuentos lineales]`**.
+    * Propone el importe de la línea seleccionada **`Importe`**.
+    * Escribo el descuento **`Descuento`** que puede ser por cantidad **`Descuento por cantidad`** o por porcentaje **`Descuento por %`**.
+    * El importe final aparece en **`Total línea`**.
+    * La columna **`Dto 1`** solo muestra el descuento por porcentaje. Si selecciono **`Descuento por cantidad`** el programa calcula el porcentaje correspondiente.
+  * Un descuento total es un descuento aplicado a todo el ticket.
+  * Accedo a los descuentos totales **`[Opciones > Descuentos totales]`**.
+    * de manera similar al *descuento lineal*.
