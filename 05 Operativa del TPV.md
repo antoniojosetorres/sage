@@ -140,7 +140,7 @@
 
 ### 5.4.6 Gestión de reservas
 #### `Ventas > Terminal Punto de Venta`
-* Genero un ticket en la pantalla linal.
+* Genero un ticket en la pantalla lineal.
 * Es posible marcar un ticket o albarán como *reservado* para identificar que el cliente vendrá posteriormente a recoger la mercancía.
 * Cuando se reserva un ticket aparece con un sello identificativo.
 * Si el cliente no recoge la mercancía el mismo día, es conveniente convertir el ticket en albarán para poder realizar el arqueo de caja.
@@ -165,3 +165,22 @@
   * Si no hay entregas a cuenta en la reserva, no se puede entregar ningún artículo.
   
 ### 5.4.7 Gestión de entregas de tickets
+#### `Ventas > Gestión entregas de tickets`
+* Muestra la pantalla **`Gestión de entregas de tickets`** que permite la gestión de varios tickets del mismo cliente.
+  * Se puede filtrar por fecha **`Fecha`**, por operario **`Operario`** y por forma de cobro **`Forma cobro`**.
+  * Al introducir el importe entregado **`Entrega`** y dar a **`[Intro]`**, muestra todos los tickets pendientes del cliente por orden cronológico y se marcarán aquellos tickets cuyo importe se cubran total o parcialmente con el importe entregado.
+  * Selecciono la forma de cobro **`Forma cobro`** y hago click en el botón **`[Cobrar tickets]`**.
+  
+### 5.4.8 Operaciones de caja
+#### `Ventas > Terminal Punto de Venta`
+* Cambio a perfil lineal **`[Cambio de perfil]`**.
+  * Cobros varios **`[Q-Cobros]`**: permite entrar un importe en la caja, en cualquier forma de cobro, que no está relacionado con una venta.
+    * Propone el operario **`Operario`** y la fecha **`Fecha`**. Puedo introducir la entrega **`Entrega`** y el concepto **`Concepto`**.
+    * Internamente se contabiliza a través de una cuenta puente **`Cuenta puente`** definida en el mantenimiento de cajas.
+  * Pagos varios **`[H-Pagos]`**: permite sacar un importe de la caja, en cualquier forma de pago, que que no está relacionado con una compra.
+    * Procedo como con Cobros varios.
+  [03:30]
+  * Reposición
+  * Retiros
+  * Cobros fra
+  
