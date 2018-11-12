@@ -1,6 +1,6 @@
-# 05 Operativa del TPV
+# 05 OPERATIVA DEL TPV
 ## 051 Pedido de Venta
-### `Ventas > Pedido`
+#### `Ventas > Pedido`
 * Por defecto propone un número del contador configurado en las opciones de contadores.
 * Se propone la fecha del día **`Fecha`** y la fecha de entrega **`F. Entrega`**.
 * Selecciono el almacén **`Almacen`**, el vendedor **`Vendedor`** y la forma de pago **`F.Pago`**.
@@ -15,7 +15,7 @@
 * En la parte inferior puedo ver el importe del pedido **`Total (€)`**, la importe base **`Base IVA`**, el porcentaje de IVA **`% IVA`**, el importe de IVA **`Importe IVA`** y el importe de recargo **`Imp. Recargo`**.
 
 ## 052 Traspaso de tickets a albaranes facturables
-### `Ventas > Terminal Punto de Venta`
+#### `Ventas > Terminal Punto de Venta`
 * Selecciono el perfil lineal **`Completo`**.
 * Añado **`[Añadir]`** los artículos **`Articulo`** y sus unidades **`Unidades`**.
 * Una vez introducido el ticket, supongamos el cliente me pide que le haga una factura.
@@ -28,15 +28,16 @@
   * Una vez cobrado, automáticamente pone el sello **`Facturado`**.
   * Haciendo doble click en **`Facturado`**, aparece la factura y muestra el sello **`Contabilizada`**.
   * Se ha pasado de un **ticket** a **albarán facturado**.
-### `Ventas > Traspaso de tickets a albaranes facturables`
+#### `Ventas > Traspaso de tickets a albaranes facturables`
 * Se filtra por los parámetros correspondientes y se muestra un listado de los tickets que pueden traspasarse.
 * Marco los tickets que quiero facturar y hago click en **`[Aceptar]`**.
 * Se asignará un número de albarán **`Nº Albarán`** y un número de factura **`Nº Factura`**.
 * Haciendo click en **`[Opciones]`** puedo ver el ticket **`[Ver ticket]`**, el albarán facturado **`[Ver albarán]`** o la factura contabilizada **`[Ver factura]`**.
 * Nota: *Los tickets traspasados a albaranes de venta tendrán como entrega a cuenta el total cobrado del ticket. Si se genera la factura de venta automáticamente y el ticket tiene algún importe pendiente de cobrar, también se generarán las previsiones de la factura*.
 
-## 0531 Generación de tickets con pantalla táctil
-### `Ventas > Terminal Punto de Venta`
+## 053 Operativa de Venta
+### 0531 Generación de tickets con pantalla táctil
+#### `Ventas > Terminal Punto de Venta`
 * Aparece la pantalla **`Reposiciones`**.
   * Propone la caja **`Caja`**, el operario **`Operario`** y la fecha actual **`Fecha`**.
   * Inserto el importe en efectivo **`Importe`** que quiero dejar en la caja.
@@ -50,8 +51,8 @@
   * Añado una unidad de cada artículo haciendo click en su celda. Cada vez que hago click se inserta una unidad más.
   * También puedo añadir unidades desde el teclado.
 
-## 0532 Generación de tickets con pantalla lineal
-### `Ventas > Terminal Punto de Venta`
+### 0532 Generación de tickets con pantalla lineal
+#### `Ventas > Terminal Punto de Venta`
 * Por defecto se entra en el perfil **`Táctil`**.
 * Cambio a perfil lineal **`[Cambio de perfil]`**.
   * Propone el documento **`Documento` TICKET** pero se pueden generar albaranes y facturas.
@@ -60,8 +61,8 @@
   * Añado **`[Añadir]`** los artículos **`Articulo`** y sus unidades **`Unidades`**.
   * Selecciono el artículo haciendo click en la **`[lupa]`**.
 
-## 0533 Cobro del documento
-### `Ventas > Terminal Punto de Venta`
+### 0533 Cobro del documento
+#### `Ventas > Terminal Punto de Venta`
 * Genero un ticket en la pantalla táctil.
   * Para cobrar el ticket, pulso en el botón correspondiente **`[Muestra la pantalla para cobrar ticket o imprime el documento]`**.
   * Aparece la pantalla **`Cobro de tickets`**.
@@ -75,8 +76,9 @@
   * Aparece la pantalla **`Cobro de tickets`**.
   * Procedo como con la pantalla táctil.
 
-## 0541 Descuentos lineales y descuento total
-### `Ventas > Terminal Punto de Venta`
+## 054 Operativas más habituales
+### 0541 Descuentos lineales y descuento total
+#### `Ventas > Terminal Punto de Venta`
 * Genero un ticket en la pantalla lineal.
 * Hay dos tipos de descuento: *descuento lineal* y *descuento total*.
   * Los descuentos lineales son sólo para tickets. Un descuento lineal es un descuento aplicado a la línea seleccionada.
@@ -90,8 +92,8 @@
     * Procedo como con el *descuento lineal*.
     * La columna **`Dto 1`** se recalcula con el porcentaje coorecto.
 
-## 0542 Aparcar ticket
-### `Ventas > Terminal Punto de Venta`
+### 0542 Aparcar ticket
+#### `Ventas > Terminal Punto de Venta`
 * *Aparcar un ticket* es cuando se está atendiendo a varios clientes a la vez, se tiene un ticket a medio hacer y se quiere realizar el ticket de otro cliente. Es decir, estoy cobrando a un cliente unos artículos y ese cliente se olvida de coger otro artículo. Para no tener que borrar el ticket entonces lo aparco.
 * Aparcar significa que lo que está en pantalla lo guarda y deja lista la pantalla para otro cliente.
 * Para aparcar el ticket actual, hago click en **`[Aparcar ticket]`**.
@@ -100,14 +102,14 @@
   * Al seleccionar el ticket aparcado, este se muestra con el sello `Aparcado`.
   * Procedo al cobro como con cualquier otro ticket.
 
-## 0543 Ticket a crédito
-### `Ventas > Terminal Punto de Venta`
+### 0543 Ticket a crédito
+#### `Ventas > Terminal Punto de Venta`
 * Tengo un ticket que no he cobrado en su totalidad. Puedo dejar el *ticket a crédito* y recuperarlo posteriormente para su cobro.
 * Realizo un ticket y al hacer click en **`[Salir]`** si no lo he cobrado, se guarda como un *ticket a crédito*.
 * Para cobrar el ticket a crédito, procedo como con cualquier otro ticket.
 
-## 0544 Entregas a cuenta de facturas o albranes
-### `Ventas > Terminal Punto de Venta`
+### 0544 Entregas a cuenta de facturas o albranes
+#### `Ventas > Terminal Punto de Venta`
 * Genero un ticket desde la pantalla lineal.
 * Lo paso a albarán **`Documento` ALBARAN**.
   * Si el cliente es *Cliente Varios*, pregunta si se desea cambiar el cliente. Si contesto que **`[No]`**, pregunta si deseo entrar en la ficha de Clientes Varios. Y si contesto que **`[No]`**, se genera el albarán correspondiente.
@@ -117,3 +119,6 @@
   * Si no se cobra en su totalidad, la siguiente vez que lo seleccione se mostrará el importe que queda pendiente por cobrar.
   * Si el albarán está totalmente cobrado, **no** se pueden realizar *entregas a cuenta*. 
 
+### 0545 Emisión y gestión de vales
+#### `Ventas > Terminal Punto de Venta`
+* 
