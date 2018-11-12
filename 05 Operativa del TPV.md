@@ -121,4 +121,18 @@
 
 ### 0545 Emisión y gestión de vales
 #### `Ventas > Terminal Punto de Venta`
-* 
+* Genero un ticket y lo cobro.
+* Quiero hacer una devolución de este ticket.
+  * Compruebo las últimas ventas de un cliente **`[Ultimas ventas del cliente]`**.
+  * Selecciono el ticket correspondiente, hago click en **`[Devolución]`** y, a continuación, hago click en **`Cobrar`**.
+  * Aparece la pantalla **`Devoluciones`** preguntando si deseo efectuar la devolución en efectivo **`[Efectivo]`** o realizar un vale **`[Vale]`**. Hago click en **`[Vale]`**.
+    * Aparece la pantalla **`Vales`**.
+    * Propone el ticket **`Ticket`**, el número de veces que se ha hecho un vale para ese ticket **`Orden`**, la caducidad del vale **`Caducidad`**, el importe **`Importe`** y la descripción **`Descripción`**.
+    * El vale puede o no imprimirse.
+* Genero otro ticket y lo cobro mediante un vale.
+* Elijo la opcíon **`Forma de pago` Vales** y aparece la pantalla **`Entrada de vales`**.
+  * Pulso en el botón **`Vales Pendientes`** para consultar cuál es el ticket **`Ticket`** que quiero utilizar.
+  * Una vez introducido, aparece el orden **`Orden`** y pulso en **`[Aceptar]`**.
+  * Se puede hacer un vale por la diferencia. Si no se escoge se realizará un retiro de caja por la diferencia.
+  
+    
