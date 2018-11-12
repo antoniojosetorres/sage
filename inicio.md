@@ -87,4 +87,33 @@
     * La columna **`Dto 1`** solo muestra el descuento por porcentaje. Si selecciono **`Descuento por cantidad`** el programa calcula el porcentaje correspondiente.
   * Un descuento total es un descuento aplicado a todo el ticket.
   * Accedo a los descuentos totales **`[Opciones > Descuentos totales]`**.
-    * de manera similar al *descuento lineal*.
+    * Procedo como con el *descuento lineal*.
+    * La columna **`Dto 1`** se recalcula con el porcentaje coorecto.
+
+## 0542 Aparcar ticket
+### `Ventas > Terminal Punto de Venta`
+* *Aparcar un ticket* es cuando se está atendiendo a varios clientes a la vez, se tiene un ticket a medio hacer y se quiere realizar el ticket de otro cliente. Es decir, estoy cobrando a un cliente unos artículos y ese cliente se olvida de coger otro artículo. Para no tener que borrar el ticket entonces lo aparco.
+* Aparcar significa que lo que está en pantalla lo guarda y deja lista la pantalla para otro cliente.
+* Para aparcar el ticket actual, hago click en **`[Aparcar ticket]`**.
+* Para desaparcar el ticket actual, hago click en **`[Tickets aparacdos]`**.
+  * Propone el operario **`Operario`** y muestra una lista con todos los tickets aparcados.
+  * Al seleccionar el ticket aparcado, este se muestra con el sello `Aparcado`.
+  * Procedo al cobro como con cualquier otro ticket.
+
+## 0543 Ticket a crédito
+### `Ventas > Terminal Punto de Venta`
+* Tengo un ticket que no he cobrado en su totalidad. Puedo dejar el *ticket a crédito* y recuperarlo posteriormente para su cobro.
+* Realizo un ticket y al hacer click en **`[Salir]`** si no lo he cobrado, se guarda como un *ticket a crédito*.
+* Para cobrar el ticket a crédito, procedo como con cualquier otro ticket.
+
+## 0544 Entregas a cuenta de facturas o albranes
+### `Ventas > Terminal Punto de Venta`
+* Genero un ticket desde la pantalla lineal.
+* Lo paso a albarán **`Documento` ALBARAN**.
+  * Si el cliente es *Cliente Varios*, pregunta si se desea cambiar el cliente. Si contesto que **`[No]`**, pregunta si deseo entrar en la ficha de Clientes Varios. Y si contesto que **`[No]`**, se genera el albarán correspondiente.
+* Si quiero cobrar el albarán, el programa muestra la pantalla **`Impresión albarán`** y **no** deja cobrarlo.
+* Para cobrarlo, entro en **`[Opciones > Entregas a cuenta]`**.
+  * Inserto el importe que me entrega el cliente **`Entrega`**.
+  * Si no se cobra en su totalidad, la siguiente vez que lo seleccione se mostrará el importe que queda pendiente por cobrar.
+  * Si el albarán está totalmente cobrado, **no** se pueden realizar *entregas a cuenta*. 
+
