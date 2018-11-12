@@ -133,6 +133,30 @@
 * Elijo la opcíon **`Forma de pago` Vales** y aparece la pantalla **`Entrada de vales`**.
   * Pulso en el botón **`Vales Pendientes`** para consultar cuál es el ticket **`Ticket`** que quiero utilizar.
   * Una vez introducido, aparece el orden **`Orden`** y pulso en **`[Aceptar]`**.
-  * Se puede hacer un vale por la diferencia. Si no se escoge se realizará un retiro de caja por la diferencia.
+  * Se puede hacer un vale por la diferencia. Si no se escoge se realizará un retiro de caja por la diferencia. Si se escoge se hará el vale correspondiente.
+#### `Ventas > Gestión de vales`
+* Selecciono un vale y hago click en el botón **`[Ver]`**.
+  * Muestra el ejercicio **`Ejercicio`**, la serie **`Serie`**, el ticket al que corresponde **`Ticket`** y toda la información referente al vale: la fecha en que se emitió **`Fecha`**, la caducidad **`Caducidad`**, el importe **`Importe`**, el operario **`Operario`** y la descripción **`Descripción`**.
+
+### 0546 Gestión de reservas
+#### `Ventas > Terminal Punto de Venta`
+* Genero un ticket en la pantalla linal.
+* Es posible marcar un ticket o albarán como *reservado* para identificar que el cliente vendrá posteriormente a recoger la mercancía.
+* Cuando se reserva un ticket aparece con un sello identificativo.
+* Si el cliente no recoge la mercancía el mismo día, es conveniente convertir el ticket en albarán para poder realizar el arqueo de caja.
+* El cliente antes de cobrar el ticket me pide que se lo guarde y que más tarde recogerá la mercancía. Además, el stock ya se ha restado del almacén.
+  ### 05461 Convertir a albarán reservado
+  * Para convertir el ticket en albarán reservado, hago click en **`[Opciones > Convertir en albarán reservado]`**.
+  * Si el cliente es *Cliente Varios*, pregunta si se desea cambiar el cliente. Si contesto que **`[No]`**, pregunta si deseo entrar en la ficha de Clientes Varios. Y si contesto que **`[Sí]`**, muestra la panatalla de **`Entrada del cliente - Ventas al contado`**.
+  * En esta pantalla puedo introducir los datos del cliente: el nombre **`Nombre cliente`** y el teléfono **`Teléfono`**.
+  * De esta manera, se obtiene un albarán con el sello **`Reservado`** y ya se puede realizar un cierre de caja o un arqueo.
+  * Para cobrar ese albarán, hago click en **`[Opciones > Entregas a cuenta]`** y cuando lo haya cobrado en su totalidad, anulo la reserva **`[Opciones > Anular reserva]`**.
+  ### 05462 Reservar
+  * Se puede reservar un ticket si el cliente va a recoger la mercancía en el mismo día, antes de cerrar la caja.
+  * Para reservar un ticket, hago click en **`[Opciones > Reservar ticket]`**.
+  * El ticket aparece con un sello **`Reservado`**.
+  * El cliente puede pagar todo o una parte del ticket.
+  * Si no cobro la totalidad del ticket, aparece una pantalla que me advierte preguntando si deseo convertir el ticket en *Entrega a cuenta*.
+  * Al terminar el cobro, me pregunta si estoy seguro de dejar el *ticket a crédito*. Si contesto que **`[Sí]`**, lo reserva.
+  * Cuando el cliente recoge la mercancía y paga la parte restante del ticket, el programa me pregunta si deseo quitar la reserva del ticket.
   
-    
