@@ -1,5 +1,5 @@
-# 05 OPERATIVA DEL TPV
-## 051 Pedido de Venta
+# 5 OPERATIVA DEL TPV
+## 5.1 Pedido de Venta
 #### `Ventas > Pedido`
 * Por defecto propone un número del contador configurado en las opciones de contadores.
 * Se propone la fecha del día **`Fecha`** y la fecha de entrega **`F. Entrega`**.
@@ -13,8 +13,8 @@
 * Puedo ver los últimos pedidos por cliente **`[Pedidos]`**, con los documentos **`Documentos`** de ese cliente con sus correspondientes detalles **`Detalle`**.
 * Puedo ver los **`[Pedidos pendientes de servir del cliente]`**.
 * En la parte inferior puedo ver el importe del pedido **`Total (€)`**, la importe base **`Base IVA`**, el porcentaje de IVA **`% IVA`**, el importe de IVA **`Importe IVA`** y el importe de recargo **`Imp. Recargo`**.
-
-## 052 Traspaso de tickets a albaranes facturables
+---
+## 5.2 Traspaso de tickets a albaranes facturables
 #### `Ventas > Terminal Punto de Venta`
 * Selecciono el perfil lineal **`Completo`**.
 * Añado **`[Añadir]`** los artículos **`Articulo`** y sus unidades **`Unidades`**.
@@ -34,9 +34,9 @@
 * Se asignará un número de albarán **`Nº Albarán`** y un número de factura **`Nº Factura`**.
 * Haciendo click en **`[Opciones]`** puedo ver el ticket **`[Ver ticket]`**, el albarán facturado **`[Ver albarán]`** o la factura contabilizada **`[Ver factura]`**.
 * Nota: *Los tickets traspasados a albaranes de venta tendrán como entrega a cuenta el total cobrado del ticket. Si se genera la factura de venta automáticamente y el ticket tiene algún importe pendiente de cobrar, también se generarán las previsiones de la factura*.
-
-## 053 Operativa de Venta
-### 0531 Generación de tickets con pantalla táctil
+---
+## 5.3 Operativa de Venta
+### 5.3.1 Generación de tickets con pantalla táctil
 #### `Ventas > Terminal Punto de Venta`
 * Aparece la pantalla **`Reposiciones`**.
   * Propone la caja **`Caja`**, el operario **`Operario`** y la fecha actual **`Fecha`**.
@@ -51,7 +51,7 @@
   * Añado una unidad de cada artículo haciendo click en su celda. Cada vez que hago click se inserta una unidad más.
   * También puedo añadir unidades desde el teclado.
 
-### 0532 Generación de tickets con pantalla lineal
+### 5.3.2 Generación de tickets con pantalla lineal
 #### `Ventas > Terminal Punto de Venta`
 * Por defecto se entra en el perfil **`Táctil`**.
 * Cambio a perfil lineal **`[Cambio de perfil]`**.
@@ -61,7 +61,7 @@
   * Añado **`[Añadir]`** los artículos **`Articulo`** y sus unidades **`Unidades`**.
   * Selecciono el artículo haciendo click en la **`[lupa]`**.
 
-### 0533 Cobro del documento
+### 5.3.3 Cobro del documento
 #### `Ventas > Terminal Punto de Venta`
 * Genero un ticket en la pantalla táctil.
   * Para cobrar el ticket, pulso en el botón correspondiente **`[Muestra la pantalla para cobrar ticket o imprime el documento]`**.
@@ -75,9 +75,9 @@
   * Para cobrar el ticket, pulso en el botón correspondiente **`[Muestra la pantalla para cobrar ticket o imprime el documento]`**.
   * Aparece la pantalla **`Cobro de tickets`**.
   * Procedo como con la pantalla táctil.
-
-## 054 Operativas más habituales
-### 0541 Descuentos lineales y descuento total
+---
+## 5.4 Operativas más habituales
+### 5.4.1 Descuentos lineales y descuento total
 #### `Ventas > Terminal Punto de Venta`
 * Genero un ticket en la pantalla lineal.
 * Hay dos tipos de descuento: *descuento lineal* y *descuento total*.
@@ -92,7 +92,7 @@
     * Procedo como con el *descuento lineal*.
     * La columna **`Dto 1`** se recalcula con el porcentaje coorecto.
 
-### 0542 Aparcar ticket
+### 5.4.2 Aparcar ticket
 #### `Ventas > Terminal Punto de Venta`
 * *Aparcar un ticket* es cuando se está atendiendo a varios clientes a la vez, se tiene un ticket a medio hacer y se quiere realizar el ticket de otro cliente. Es decir, estoy cobrando a un cliente unos artículos y ese cliente se olvida de coger otro artículo. Para no tener que borrar el ticket entonces lo aparco.
 * Aparcar significa que lo que está en pantalla lo guarda y deja lista la pantalla para otro cliente.
@@ -102,13 +102,13 @@
   * Al seleccionar el ticket aparcado, este se muestra con el sello `Aparcado`.
   * Procedo al cobro como con cualquier otro ticket.
 
-### 0543 Ticket a crédito
+### 5.4.3 Ticket a crédito
 #### `Ventas > Terminal Punto de Venta`
 * Tengo un ticket que no he cobrado en su totalidad. Puedo dejar el *ticket a crédito* y recuperarlo posteriormente para su cobro.
 * Realizo un ticket y al hacer click en **`[Salir]`** si no lo he cobrado, se guarda como un *ticket a crédito*.
 * Para cobrar el ticket a crédito, procedo como con cualquier otro ticket.
 
-### 0544 Entregas a cuenta de facturas o albranes
+### 5.4.4 Entregas a cuenta de facturas o albranes
 #### `Ventas > Terminal Punto de Venta`
 * Genero un ticket desde la pantalla lineal.
 * Lo paso a albarán **`Documento` ALBARAN**.
@@ -119,7 +119,7 @@
   * Si no se cobra en su totalidad, la siguiente vez que lo seleccione se mostrará el importe que queda pendiente por cobrar.
   * Si el albarán está totalmente cobrado, **no** se pueden realizar *entregas a cuenta*. 
 
-### 0545 Emisión y gestión de vales
+### 5.4.5 Emisión y gestión de vales
 #### `Ventas > Terminal Punto de Venta`
 * Genero un ticket y lo cobro.
 * Quiero hacer una devolución de este ticket.
@@ -138,20 +138,20 @@
 * Selecciono un vale y hago click en el botón **`[Ver]`**.
   * Muestra el ejercicio **`Ejercicio`**, la serie **`Serie`**, el ticket al que corresponde **`Ticket`** y toda la información referente al vale: la fecha en que se emitió **`Fecha`**, la caducidad **`Caducidad`**, el importe **`Importe`**, el operario **`Operario`** y la descripción **`Descripción`**.
 
-### 0546 Gestión de reservas
+### 5.4.6 Gestión de reservas
 #### `Ventas > Terminal Punto de Venta`
 * Genero un ticket en la pantalla linal.
 * Es posible marcar un ticket o albarán como *reservado* para identificar que el cliente vendrá posteriormente a recoger la mercancía.
 * Cuando se reserva un ticket aparece con un sello identificativo.
 * Si el cliente no recoge la mercancía el mismo día, es conveniente convertir el ticket en albarán para poder realizar el arqueo de caja.
 * El cliente antes de cobrar el ticket me pide que se lo guarde y que más tarde recogerá la mercancía. Además, el stock ya se ha restado del almacén.
-  ### 05461 Convertir a albarán reservado
+  ### 5.4.6.1 Convertir a albarán reservado
   * Para convertir el ticket en albarán reservado, hago click en **`[Opciones > Convertir en albarán reservado]`**.
   * Si el cliente es *Cliente Varios*, pregunta si se desea cambiar el cliente. Si contesto que **`[No]`**, pregunta si deseo entrar en la ficha de Clientes Varios. Y si contesto que **`[Sí]`**, muestra la panatalla de **`Entrada del cliente - Ventas al contado`**.
   * En esta pantalla puedo introducir los datos del cliente: el nombre **`Nombre cliente`** y el teléfono **`Teléfono`**.
   * De esta manera, se obtiene un albarán con el sello **`Reservado`** y ya se puede realizar un cierre de caja o un arqueo.
   * Para cobrar ese albarán, hago click en **`[Opciones > Entregas a cuenta]`** y cuando lo haya cobrado en su totalidad, anulo la reserva **`[Opciones > Anular reserva]`**.
-  ### 05462 Reservar
+  ### 5.4.6.2 Reservar
   * Se puede reservar un ticket si el cliente va a recoger la mercancía en el mismo día, antes de cerrar la caja.
   * Para reservar un ticket, hago click en **`[Opciones > Reservar ticket]`**.
   * El ticket aparece con un sello **`Reservado`**.
@@ -159,4 +159,9 @@
   * Si no cobro la totalidad del ticket, aparece una pantalla que me advierte preguntando si deseo convertir el ticket en *Entrega a cuenta*.
   * Al terminar el cobro, me pregunta si estoy seguro de dejar el *ticket a crédito*. Si contesto que **`[Sí]`**, lo reserva.
   * Cuando el cliente recoge la mercancía y paga la parte restante del ticket, el programa me pregunta si deseo quitar la reserva del ticket.
+  ### 5.4.6.3 Entregas lineales y totales
+  * *Entregar una línea* es cuando el cliente solo se lleva una parte del ticket o albarán reservado.
+  * Para entregar una línea, hago click en **`[Opciones > Entregar línea]`**.
+  * Si no hay entregas a cuenta en la reserva, no se puede entregar ningún artículo.
   
+### 5.4.7 Gestión de entregas de tickets
