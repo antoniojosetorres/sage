@@ -1,6 +1,7 @@
 # 05 Operativa del TPV
 
 ## 051 Pedido de Venta
+
 ### `Ventas > Pedido`
 * Por defecto pone un número del contador configurado en las opciones de contadores.
 * Se propone la fecha del día `[Fecha]` y la fecha de entrega `[F. Entrega]`.
@@ -15,8 +16,8 @@
 * Puedo ver los `[Pedidos pendientes de servir del cliente]`.
 * En la parte inferior puedo ver el importe del pedido `[Total (€)]`, la importe base `[Base IVA]`, el porcentaje de IVA `[% IVA]`, el importe de IVA `[Importe IVA]` y el importe de recargo `[Imp. Recargo]`.
 
-## 052 Traspaso de pedidos de venta a albaranes de venta de la caja
-(Realmente es Traspaso de tickets a albaranes facturables)
+## 052 Traspaso de tickets a albaranes facturables
+
 ### `Ventas > Terminal Punto de Venta`
 * Selecciono el perfil lineal `[Completo]`.
 * Añado `[Añadir]` los artículos `[Articulo]` y sus unidades `[Unidades]`.
@@ -28,10 +29,26 @@
   * Si no entro en la ficha, se convierte automáticamente en factura.
   * Para cobrar esa factura, hago click en `[Cobrar]`, selecciono `Contabilizar cobro` y hago click en `Facturar`.
   * Una vez cobrado, automáticamente pone el sello `Facturado`.
-  * Haciendo doble click en Facturado, aparece la factura y muestra el sello `Contabilizada`.
-  * Se ha pasado de un ticket a albarán facturado.
+  * Haciendo doble click en `Facturado`, aparece la factura y muestra el sello `Contabilizada`.
+  * Se ha pasado de un **ticket** a **albarán facturado**.
 
 ### `Ventas > Traspaso de tickets a albaranes facturables`
 * Se filtra por los parámetros correspondientes y se muestra un listado de los tickets que pueden traspasarse.
-	* Los tickets traspasados a albaranes de venta tendrán como entrega a cuenta el total cobrado del ticket.
-	* Si se genera la factura de venta automáticamente y el ticket tiene algún importe pendiente de cobrar, también se generarán las previsiones de la factura.
+* Marco los tickets que quiero facturar y hago click en `Aceptar`.
+* Se asignará un número de albarán `[Nº Albarán]` y un número de factura `[Nº Factura]`.
+* Haciendo click en `[Opciones]` puedo ver el ticket `[Ver ticket]`, el albarán facturado `[Ver albarán]` o la factura contabilizada `[Ver factura]`.
+* Nota: *Los tickets traspasados a albaranes de venta tendrán como entrega a cuenta el total cobrado del ticket. Si se genera la factura de venta automáticamente y el ticket tiene algún importe pendiente de cobrar, también se generarán las previsiones de la factura*.
+
+## 053 Generación de tickets con pantalla táctil
+
+### `Ventas > Terminal Punto de Venta`
+* Aparece la pantalla `Reposiciones`.
+* Propone la caja `[Caja]` y el operario `[Operario]` en la fecha actual `[Fecha]`.
+* Inserto el importe en efectivo que quiero dejar en la caja `[Importe]`.
+* Puedo ver el número de reposiciones `[Nº Reposiciones]` y el total de reposiciones del día `[Total Reposiciones]`.
+* Una vez hecha la reposición se puede acceder a la pantalla del TPV llamada `Perfil`.
+* En el perfil `Táctil` aparece el documento y debajo la tabla de los artículos que se van añadiendo a la venta.
+* El perfil `Táctil` dispone de una matriz con celdas para cada artículo en los cuales puede aparecer el nombre o una imagen del artículo.
+* Los artículos se pueden clasificar por `Familias`, `Subfamilias`, `Marcas`, `Artículos definibles`y `Clasificaciones`.
+* Se pueden generar tickets `[TICKET]`, albaranes `[ALBARAN]` o facturas `[FACTURA]`.
+
