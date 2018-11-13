@@ -178,9 +178,25 @@
     * Propone el operario **`Operario`** y la fecha **`Fecha`**. Puedo introducir la entrega **`Entrega`** y el concepto **`Concepto`**.
     * Internamente se contabiliza a través de una cuenta puente **`Cuenta puente`** definida en el mantenimiento de cajas.
   * Pagos varios **`[H-Pagos]`**: permite sacar un importe de la caja, en cualquier forma de pago, que que no está relacionado con una compra.
-    * Procedo como con Cobros varios.
+    * Procedo como con Cobros varios.  
   [03:30]
   * Reposición
   * Retiros
   * Cobros fra
-  
+---
+## 5.5 Arqueo de caja
+### 5.5.1 Cierre de turno o de caja
+### 5.5.2 Arqueo de caja (Interpretación y datos de arqueo)
+### 5.5.3 Consulta de arqueos
+### 5.5.4 Consolidación de arqueos
+---
+## 5.6 Contabilización de los movimientos de TPV
+### 5.6.1 Facturación de tickets
+### 5.6.2 Traspaso de tickets a albaranes facturables
+### 5.6.3 Funcionamiento de las cuentas contables de TPV
+  ### 5.6.3.1 ¿Dónde aparecen cuentas contables predefinidas?
+  ### 5.6.3.2 ¿En qué momento se contabilizan los movimientos de TPV?
+  ### 5.6.3.3 ¿Cómo se utilizan las cuentas de Sage 50c TPV?
+---
+## 5.7 Gestión de solicitud de material
+
