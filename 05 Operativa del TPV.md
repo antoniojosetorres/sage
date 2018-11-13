@@ -204,10 +204,38 @@
 ### 5.5.1 Cierre de turno o de caja
 #### `Ventas > Cierre de turno o caja`
 * Permite realizar el arqueo de caja definitivo, sin mostrar los datos existentes en el TPV.
-
+* Abre la pantalla **`Cierre de turno o caja`**.
+* Permite introducir el importe que deja de reposición en caja **`Reposición en caja`** y el importe retirado **`Importe retirado`** calculando automáticamente el importe tecleado **`Importe tecleado`**.
 
 ### 5.5.2 Arqueo de caja (Interpretación y datos de arqueo)
+#### `Ventas > Arqueo de caja`
+* No se pueden realizar arqueos de caja si existen tickets aparcados o reservados.
+* Abre la pantalla **`Arqueo de caja`**.
+* Porpone la caja **`Caja`** en la que se va a efectuar el arqueo.
+* Se puede indicar si el tipo de arqueo **`Tipo`** es Consulta **`Consulta`** o Definitivo **`Definitivo`**. Cuando el arqueo es *definitivo*, se le asigna un número y se graba.
+* Permite introducir el importe de reposición **`Reposición`** que es el importe que se deja en caja como reposición inicial del día siguiente. Así, al entrar en el TPV después de realizar el arqueo, se propone ese importe como reposición inicial.
+* Permite introducir el importe retirado **`Retirado`** que es el importe efectivo de caja menos la cantidad separada para la reposición de la caja del día siguiente. Es decir, es el importe real que se retira de la caja.
+* Permite introducir el importe contado **`Teclaeado`** que es el importe total obtenido en el recuento manual de la caja.
+* Con el botón **`[Recuento]`** activo una pantalla que me permite indicar cuántos billetes y monedas hay de cada tipo en la caja.
+* Desde la parte inferior de la pantalla puedo:
+  * ver un listado de créditos **`[Listados > Créditos]`** que muestra todos los tickets a crédito del arqueo.
+  * ver un listado de líneas de abono **`[Listado > Líneas abono]`** que muestra todos los tickets en cuyas líneas hay algún abono.
+  * introducir observaciones con el botón **`[Obervaciones`]**.
+  * desglosar los tipos de IVA de los tickets del arqueo con el botón **`[IVA Tickets]`**.
+* El funcionamiento del arqueo es el siguiente:
+  * Marco la opción **`Tipo` Consulta**.
+  * En **`Reposición`** pongo *50,00* y en **`Retirado`** pongo *1184,25*. En **`Tecleado`** se calcula la diferencia *1234,25*.
+  * *Nota: La opción 'Consulta' permite simular el arqueo. En caso de desear cerrar la caja y efectuar el arqueo hay que seleccionar la opción 'Definitivo'*.
+  * Obtengo los datos del arqueo para comprobar que todo es correcto:
+    * Ventas: número de facturas simplificadas, importe de las facturas simplificadas, de los albaranes y de las facturas.
+    * Operaciones de caja: importe de reposiciones de caja, de cobros de facturas simplificadas, de vales efectuados, de entregas a cuenta, de cobros varios, de cobros de facturas, de pagos varios, de pagos de facturas y de retiros de caja.
+  * Una vez verificado se procede a hacer el arqueo definitivo.
+  * Marco la opción **`Tipo` Definitivo**.
+  * Una vez obtenido el listado puedo añadir observaciones **`Observaciones`**.
+
 ### 5.5.3 Consulta de arqueos
+#### `Ventas > Consulta de arqueos`
+* 
 ### 5.5.4 Consolidación de arqueos
 ---
 ## 5.6 Contabilización de los movimientos de TPV
