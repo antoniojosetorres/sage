@@ -106,7 +106,7 @@
 #### `Ventas > Terminal Punto de Venta`
 * Tengo un ticket que no he cobrado en su totalidad. Puedo dejar el *ticket a crédito* y recuperarlo posteriormente para su cobro.
 * Realizo un ticket y al hacer click en **`[Salir]`** si no lo he cobrado, se guarda como un *ticket a crédito*.
-* Para cobrar el ticket a crédito, procedo como con cualquier otro ticket.
+* Procedo al cobro como con cualquier otro ticket.
 
 ### 5.4.4 Entregas a cuenta de facturas o albranes
 #### `Ventas > Terminal Punto de Venta`
@@ -174,18 +174,38 @@
 ### 5.4.8 Operaciones de caja
 #### `Ventas > Terminal Punto de Venta`
 * Cambio a perfil lineal **`[Cambio de perfil]`**.
-  * Cobros varios **`[Q-Cobros]`**: permite entrar un importe en la caja, en cualquier forma de cobro, que no está relacionado con una venta.
-    * Propone el operario **`Operario`** y la fecha **`Fecha`**. Puedo introducir la entrega **`Entrega`** y el concepto **`Concepto`**.
-    * Internamente se contabiliza a través de una cuenta puente **`Cuenta puente`** definida en el mantenimiento de cajas.
-  * Pagos varios **`[H-Pagos]`**: permite sacar un importe de la caja, en cualquier forma de pago, que que no está relacionado con una compra.
-    * Procedo como con Cobros varios.  
-  [03:30]
-  * Reposición
-  * Retiros
-  * Cobros fra
+* Cobros varios **`[Q-Cobros]`**: permite entrar un importe en la caja, en cualquier forma de cobro, que no está relacionado con una venta.
+  * Propone el operario **`Operario`** y la fecha **`Fecha`**.
+  * Puedo introducir la entrega **`Entrega`** y el concepto **`Concepto`**.
+  * Internamente se contabiliza a través de una cuenta puente **`Cuenta puente`** definida en el mantenimiento de cajas.
+* Pagos varios **`[H-Pagos]`**: permite sacar un importe de la caja, en cualquier forma de pago, que que no está relacionado con una compra.
+  * Procedo como con *Cobros varios*.  
+* Reposición de caja **`[S-Reposición]`**: permite ingresar el importe con el que se abre la caja cada día.
+  * Pueden hacerse tantas reposiciones de caja como sean necesarias.
+  * Propone la caja **`Caja`**, el operario **`Operario`** y la fecha actual **`Fecha`**.
+  * Puedo introducir el importe de reposición **`Importe`** y muestra el número de reposiciones **`Nº Reposiciones`** y el importe total en reposiciones **`Total Reposiciones`**.
+  * Para comprobar las reposiciones del día, hago click en el botón **`[Reposiciones del día]`**.
+* Retiros de caja **`[M-Retiros]`**: permite retirar un importe en efectivo de la caja.
+  * Propone la caja **`Caja`**, el operario **`Operario`** y la fecha actual **`Fecha`**.
+  * Puedo introducir el concepto de retirada **`Concepto`**.
+  * Procedo como con *Reposición de caja*.
+  * Internamente se contabiliza a través de una cuenta puente definida en el mantenimiento de cajas.
+* Cobros de facturas **`[T-Cobros Fra]`**: permite cobrar una factura o documento a crédito.
+  * Abre la pantalla **`Previsiones de cobro`**.
+  * Permite filtrar por cliente **`Cliente inicial`**, **`Cliente final`**; por banco **`Banco inicial`**, **`Banco final`** y por fecha **`Desde`**, **`Hasta`**. Luego hago click en el botón **`[Refrescar]`**.
+  * Permite buscar por factura **`Buscar factura`** y por importe **`Buscar importe`**.
+  * Una vez seleccionada la factura, se abre la pantalla **`Cobro de previsiones`** y se cobra la factura con el botón **`[Cobrar]`**.
+* Pagos de facturas **`[Y-Pagos Fra]`**: permite pagar una factura o documento a crédito.
+  * Abre la pantalla **`Previsiones de pago`**.
+  * Permite filtrar por proveedor **`Proveedor inicial`**, **`Proveedor final`**; por banco **`Banco inicial`**, **`Banco final`** y por fecha **`Desde`**, **`Hasta`**. Luego hago click en el botón **`[Refrescar]`**.
+  * Una vez seleccionada la factura, se abre la pantalla **`Petición de datos`** y me solicita la cuenta contable de pago **`Banco`**, el operario **`Operario`** y la forma de pago **`F de pago`**.
 ---
 ## 5.5 Arqueo de caja
 ### 5.5.1 Cierre de turno o de caja
+#### `Ventas > Cierre de turno o caja`
+* Permite realizar el arqueo de caja definitivo, sin mostrar los datos existentes en el TPV.
+
+
 ### 5.5.2 Arqueo de caja (Interpretación y datos de arqueo)
 ### 5.5.3 Consulta de arqueos
 ### 5.5.4 Consolidación de arqueos
