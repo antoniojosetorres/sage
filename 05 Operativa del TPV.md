@@ -18,11 +18,11 @@
 #### `Ventas > Terminal Punto de Venta`
 * Selecciono el perfil lineal **`Completo`**.
 * Añado **`[Añadir]`** los artículos **`Articulo`** y sus unidades **`Unidades`**.
-* Una vez introducido el ticket, supongamos el cliente me pide que le haga una factura.
+* Una vez introducido el ticket pero sin cobrarlo, supongo que el cliente me pide que le haga una factura.
 * Para no tener que borrar el ticket e introducir la factura:
   * Selecciono el documento **`Documento` FACTURA**.
   * Automáticamente se traspasa a **albarán**.
-  * Pregunta si deseo cambiar el cliente. Si no cambio de cliente, pregunta si deseo entrar en la ficha de `Cliente Varios`.
+  * Pregunta si deseo cambiar el cliente. Si no cambio de cliente, pregunta si deseo entrar en la ficha de **`Cliente Varios`**.
   * Si no entro en la ficha, se convierte automáticamente en **factura**.
   * Para cobrar esa factura, hago click en **`[Cobrar]`**, selecciono **`Contabilizar cobro`** y hago click en **`[Facturar]`**.
   * Una vez cobrado, automáticamente pone el sello **`Facturado`**.
@@ -235,16 +235,54 @@
 
 ### 5.5.3 Consulta de arqueos
 #### `Ventas > Consulta de arqueos`
-* 
+* Abre la pantalla **`Proceso de Consulta de arqueos`**.
+* Permite consultar cualquier arqueo definitivo indicando la caja **`Caja`** y filtrando por el número de arqueo **`Arqueos`**.
+* Se muestra una pantalla similar al listado de arqueo de caja.
+* Permite desarquear una caja desde el botón **`[Desarquear]`**.
+
 ### 5.5.4 Consolidación de arqueos
+#### `Ventas > Consolidación de arqueos`
+* Abre la pantalla **`Consolidación de arqueos`**.
+* Permite seleccionar por fechas **`Fecha`** y por cajas **`Caja`**.
+* Muestra la suma del importe de los arqueos seleccionados.
 ---
 ## 5.6 Contabilización de los movimientos de TPV
 ### 5.6.1 Facturación de tickets
+#### `Ventas > Terminal Punto de Venta`
+* Cambio a perfil lineal **`[Cambio de perfil]`**.
+* Genero un ticket y lo cobro.
+* El ticket se muestra con el sello **`Cobrado`**.
+* A continuación el cliente pide una factura.
+* Como el ticket está cobrado, **no** puedo hacer una factura. Tengo que deshacer el cobro.
+* Para deshacer el cobro, tengo que ser un operario con permiso para ello. Dentro del Mantenimiento de operarios marco la opción *Permitir borrar/modificar los cobros (TPV)*.
+ * Introduzco la cantidad *0* como importe entregado **`Entrega`** e indico la forma de cobro **`Formas de cobro` EFECTIVO**.
+ * Como el importe cobrado es 0, pregunta si deseo borrar el cobro. Si contesto que **`Sí`**, muestro el ticket sin el sello **`Cobrado`** y ya está pendiente de cobro nuevamente. De esta manera ya sí puedo facturarlo.
+ * Cambio el documento a factura **`Documento` FACTURA**.
+ * Me indica que el cliente es un *Cliente Varios* y me pregunta si deseo cambiar el cliente. Si contesto que **`Sí`**, me permite elegir un cliente del listado de clientes y me pregunta si deseo cambiar las características del albarán. De esta manera se asignará el vendedor, la forma de pago, giros y pronto pago del nuevo cliente.
+ * Si contesto que **`Sí`**, me pregunta si deseo actualizar los precios.
+ * Si nuevamente contesto que **`Sí`**, me permite aplicar la forma de pago a ese cliente y me pregunta si deseo cambiar los giros del albarán de venta.
+ * Si una vez más contesto que **`Sí`**, me muestra la pantalla **`Impresión albarán`** desde la que puedo facturar haciendo click en el botón **`[Facturar]`**. De esta manera, la factura se muestra como **`Facturado`**.
+
 ### 5.6.2 Traspaso de tickets a albaranes facturables
+#### *ver 5.2*
+
 ### 5.6.3 Funcionamiento de las cuentas contables de TPV
   ### 5.6.3.1 ¿Dónde aparecen cuentas contables predefinidas?
+  * En el campo **`Cuenta`** dentro del **`Mantenimiento de formas de cobro`** `Archivos > Formas de cobro`.
+  * En los campos **`Cuentas puente`** dentro del **`Mantenimiento de cajas de venta`** `Archivos > Cajas de venta`.
   ### 5.6.3.2 ¿En qué momento se contabilizan los movimientos de TPV?
+  * **Cobros**, **Pagos**, **Retiros** y **Reposiciones**: en el mismo instante que se realizan.
+  * **Entregas a cuenta**: en el mismo instante que se realizan.
+  * **Facturas de venta**: en el mismo instante que se emiten.
+  * **Tickets de venta**: en el momento de la *Facturación de tickets*.
+  * **Cobros de tickets del TPV**: en el momento de la *Facturación de tickets*.
+  * **Cobros de facturas**: en el mismo instante que se realizan cuando se capturan de las previsiones pendientes.
   ### 5.6.3.3 ¿Cómo se utilizan las cuentas de Sage 50c TPV?
+  * **Cobro**: en el momento de realizar el cobro en el TPV. Debe ir cancelando las facturas de ingreso motivadas por ese cobro y cancelar la previsión de cobro correspondiente.
+  * **Pago**: en el momento de realizar el pago en el TPV. Debe ir cancelando las facturas de gasto motivadas por ese pago y cancelar la previsión de pago correspondiente.
+  * **Reposición o Retirada**:
+    1 *Cambio fijo en la caja*: en el momento de realizar la reposición de cambio la primera vez se puede indicar como puente de cobro la cuenta de Banco (572) de donde hayamos sacado el cambio inicial e ir retirando el importe de la ventas de cada día. De esta manera, no se ve la reposición del día en el arqueo aunque al ser un importe fijo es suficientemente conocido.
+    2 *Cambio variable*: [sin completar]
 ---
 ## 5.7 Gestión de solicitud de material
 
